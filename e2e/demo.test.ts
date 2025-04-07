@@ -28,7 +28,9 @@ test('export homepage as pdf in A4 format', async ({ page }) => {
 	`
 	});
 
-	fs.writeFileSync('homepage.pdf', pdfBuffer);
+	// output path of file is `${projectSrc}/document.pdf`
+	fs.writeFileSync('document.pdf', pdfBuffer);
+	
 	expect(pdfBuffer.length).toBeGreaterThan(0);
 });
 
