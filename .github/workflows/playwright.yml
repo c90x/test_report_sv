@@ -32,3 +32,4 @@ jobs:
           name: document-pdf
           path: document.pdf
           retention-days: 7
+          compression-level: 0
