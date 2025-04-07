@@ -21,12 +21,12 @@
 }
 
 body {
-    @apply bg-gray-900 px-[1.8rem] py-[1.4rem] break-words overflow-hidden;
+    @apply bg-gray-900 px-[1.8rem] py-[1.4rem] break-words overflow-x-hidden min-h-svh;
 }
 
 @media not print {
     body {
-        @apply w-[29.7cm] bg-black;
+        @apply w-[29.7cm];
     }
 }
 
