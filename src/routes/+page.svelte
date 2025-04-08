@@ -6,8 +6,8 @@
 
 	<p class="text-base">
 		New<br />
-		890348659389034865938903486593890348659389034865938903486593890348659389034865938903486593890348659389034865938903486593890348659389034865938903486593<br
-		/>
+		890348659389034865938903486593890348659389034865938903486593890348659389034865938903486593890348659389034865938903486593890348659389034865938903486593
+		<br />
 		site
 	</p>
 
@@ -15,9 +15,10 @@
 		<p class="text-base">Heeyy</p>
 	{/each}
 
-	<h1 class="new_page mb-5 text-2xl font-black drop-shadow-xl drop-shadow-indigo-500/50">
-		New Page
-	</h1>
+	<div class="new_page mb-5 flex text-2xl font-black drop-shadow-xl drop-shadow-indigo-500/50">
+		<h1 class="-skew-x-[12deg]">New Page</h1>
+	</div>
+
 	<p class="text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 
 	<div class="my-4 overflow-hidden rounded-xl border border-gray-700 shadow-md">
@@ -75,8 +76,9 @@
 								{#if value && value.startsWith('!')}
 									<td
 										class="px-6 py-4 text-right whitespace-nowrap drop-shadow-xl drop-shadow-cyan-300/50"
-										>{value}</td
 									>
+										{value.substring(1)}
+									</td>
 								{:else}
 									<td class="px-6 py-4 text-right whitespace-nowrap">{value ?? '—'}</td>
 								{/if}
@@ -88,7 +90,9 @@
 		</table>
 	</div>
 
-	<h1 class="new_page mb-5 text-2xl drop-shadow-xl drop-shadow-indigo-500/50 font-black">Title</h1>
+	<div class="new_page mb-5 flex text-2xl font-black drop-shadow-xl drop-shadow-indigo-500/50">
+		<h1 class="-skew-x-[12deg]">Title</h1>
+	</div>
 
 	<!-- #region Dots -->
 	<div class="relative">
