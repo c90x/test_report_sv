@@ -82,7 +82,7 @@
 
 <style>
 	.noise-gradient {
-		background-image: url('./Gradient2.jpg');
+		background-image: url('/Gradient2.jpg');
 		background-repeat: repeat-y;
 		background-position: center top;
 		background-size: cover;
