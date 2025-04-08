@@ -11,7 +11,7 @@
 @page {
     size: A4;
     margin: -0.5mm -0.5mm;
-    padding: calc(1.4rem + 0.5mm) calc(1.8rem + 0.5mm) calc(2.3rem + 0.5mm) calc(1.8rem + 0.5mm) !important;
+    padding: calc(1.4rem + 0.5mm) calc(1.8rem + 0.5mm - 1.5rem) calc(2.3rem + 0.5mm) calc(1.8rem + 0.5mm - 1.5rem) !important;
 }
 
 * {
@@ -26,6 +26,13 @@
 
 body {
     @apply bg-gray-900 px-[1.8rem] py-[1.4rem] break-words overflow-x-hidden min-h-svh;
+}
+
+@media print {
+    body {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
 }
 
 @media not print {
