@@ -1,16 +1,7 @@
 <script lang="ts">
 </script>
 
-<style>
-	.noise-gradient {
-		background-image: url("./Gradient.jpg");
-		background-repeat: no-repeat;
-		background-position: center top;
-		background-size: cover;
-	}
-</style>
-
-<div class="flex flex-col gap-2 font-medium no">
+<div class="no flex flex-col gap-2 font-medium">
 	<h1 class="text-4xl font-black">Report</h1>
 
 	<p class="text-lg">
@@ -24,11 +15,13 @@
 		<p class="text-base">Heeyy</p>
 	{/each}
 
-	<h1 class="break-before-page text-2xl font-black">New Page</h1>
-	<p class="text-lg">Yeey!</p>
+	<h1 class="new_page text-2xl font-black">New Page</h1>
+	<p class="text-lg">
+		Lorem ipsum dolor sit amet consectetur adipiscing elit.
+	</p>
 
 	<div class="my-2 overflow-hidden rounded-xl border border-gray-700 shadow-md">
-		<table class="min-w-full divide-y divide-gray-700 text-base table-fixed noise-gradient">
+		<table class="noise-gradient min-w-full table-fixed divide-y divide-gray-700 text-base">
 			<colgroup>
 				<col class="w-auto" />
 				{#each Array.from({ length: 3 }) as _}
@@ -78,3 +71,12 @@
 		</table>
 	</div>
 </div>
+
+<style>
+	.noise-gradient {
+		background-image: url('./Gradient.jpg');
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: cover;
+	}
+</style>
