@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="no flex flex-col gap-2 font-medium">
+<div class="space-y-2 font-medium">
 	<h1 class="text-4xl font-black">Report</h1>
 
 	<p class="text-lg">
@@ -20,7 +20,7 @@
 		Lorem ipsum dolor sit amet consectetur adipiscing elit.
 	</p>
 
-	<div class="my-2 overflow-hidden rounded-xl border border-gray-700 shadow-md">
+	<div class="my-4 overflow-hidden rounded-xl border border-gray-700 shadow-md">
 		<table class="noise-gradient min-w-full table-fixed divide-y divide-gray-700 text-base">
 			<colgroup>
 				<col class="w-auto" />
