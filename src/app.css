@@ -38,3 +38,13 @@ body {
 p {
     @apply font-medium text-lg leading-5.5;
 }
+
+.new_page {
+    @apply break-before-page;
+}
+
+@media not print {
+    .new_page {
+        @apply pt-5;
+    }
+}
