@@ -1,4 +1,16 @@
-<div class="flex flex-col gap-2 font-medium">
+<script lang="ts">
+</script>
+
+<style>
+	.noise-gradient {
+		background-image: url("./Gradient.jpg");
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: cover;
+	}
+</style>
+
+<div class="flex flex-col gap-2 font-medium no">
 	<h1 class="text-4xl font-black">Report</h1>
 
 	<p class="text-lg">
@@ -16,7 +28,7 @@
 	<p class="text-lg">Yeey!</p>
 
 	<div class="my-2 overflow-hidden rounded-xl border border-gray-700 shadow-md">
-		<table class="min-w-full divide-y divide-gray-700 text-base table-fixed">
+		<table class="min-w-full divide-y divide-gray-700 text-base table-fixed noise-gradient">
 			<colgroup>
 				<col class="w-auto" />
 				{#each Array.from({ length: 3 }) as _}
@@ -24,28 +36,28 @@
 				{/each}
 			</colgroup>
 			<thead>
-				<tr>
+				<tr class="">
 					<th
 						scope="col"
-						class="bg-gray-800 px-6 py-3 text-left text-sm font-medium tracking-wider text-gray-300 uppercase"
+						class="px-6 py-3 text-left text-sm font-bold tracking-wider text-gray-300 uppercase"
 					>
 						Factors
 					</th>
 					<th
 						scope="col"
-						class="bg-gray-800 px-6 py-3 text-left text-sm font-medium tracking-wider text-gray-300 uppercase"
+						class="px-6 py-3 text-left text-sm font-bold tracking-wider text-gray-300 uppercase"
 					>
 						Germany
 					</th>
 					<th
 						scope="col"
-						class="bg-gray-800 px-6 py-3 text-left text-sm font-medium tracking-wider text-gray-300 uppercase"
+						class="px-6 py-3 text-left text-sm font-bold tracking-wider text-gray-300 uppercase"
 					>
 						USA
 					</th>
 					<th
 						scope="col"
-						class="bg-gray-800 px-6 py-3 text-left text-sm font-medium tracking-wider text-gray-300 uppercase"
+						class="px-6 py-3 text-left text-sm font-bold tracking-wider text-gray-300 uppercase"
 					>
 						Canada
 					</th>
@@ -55,11 +67,11 @@
 				{#each Array.from({ length: 5 }) as _, i}
 					<tr class={`${i % 2 === 0 ? 'bg-gray-900' : 'bg-gray-800'}`}>
 						<td class="px-6 py-4 font-medium whitespace-nowrap text-gray-100">
-							Factor{i + 1}
+							Factor {i + 1}
 						</td>
-						<td class="px-6 py-4 whitespace-nowrap text-gray-300">Data</td>
-						<td class="px-6 py-4 whitespace-nowrap text-gray-300">Data</td>
-						<td class="px-6 py-4 whitespace-nowrap text-gray-300">Data</td>
+						<td class="px-6 py-4 whitespace-nowrap">—</td>
+						<td class="px-6 py-4 whitespace-nowrap">—</td>
+						<td class="px-6 py-4 whitespace-nowrap">—</td>
 					</tr>
 				{/each}
 			</tbody>
