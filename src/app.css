@@ -45,6 +45,6 @@ p {
 
 @media not print {
     .new_page {
-        @apply pt-5;
+        @apply pt-6;
     }
 }
