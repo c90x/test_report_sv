@@ -2,7 +2,9 @@ import { expect, test } from '@playwright/test';
 import * as fs from 'fs';
 
 test('export homepage as pdf in A4 format', async ({ page }) => {
-	await page.goto('/', { waitUntil: 'networkidle' });
+	await page.goto('/');
+
+	await page.waitForLoadState('networkidle');
 	
 	// Step 2: Create the PDF with the embedded font in SVG footer
 	const pdfBuffer = await page.pdf({
