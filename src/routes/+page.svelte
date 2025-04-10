@@ -23,6 +23,9 @@
 
 	<div class="my-4 overflow-hidden rounded-xl border border-gray-700 shadow-md">
 		<table class="noise-gradient min-w-full table-fixed divide-y divide-gray-700 text-base">
+      <caption class="text-left p-2">
+        Some Caption
+      </caption>
 			<colgroup>
 				<col class="w-auto" />
 				{#each Array.from({ length: 3 }) as _}
@@ -2583,7 +2586,7 @@
 	.noise-gradient {
 		background-image: url('/Gradient2.jpg');
 		background-repeat: repeat-y;
-		background-position: center top;
-		background-size: cover;
+		background-position: left top;
+		background-size: auto;
 	}
 </style>
