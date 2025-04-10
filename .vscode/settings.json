@@ -1,0 +1,6 @@
+{
+  "[json][svelte][html][css][typescript][javascript]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+}
